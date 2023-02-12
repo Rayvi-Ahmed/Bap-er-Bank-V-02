@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Banking Portal</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="text-5xl mt-5 text-center">Let's make some <span
+                    class="font-semibold text-violet-700">Moooney</span></h1>
+        </header>
+
+        <main>
+            <section class="mx-auto w-9/12 mt-7 text-white">
+                <div class=" grid grid-cols-3 gap-4">
+                    <div class="p-8 bg-green-600 rounded-lg">
+                        <h1 class="text-4xl">Deposite</h1>
+                        <h4 class="text-3xl">$ <span id="deposite-total">00</span></h4>
+                    </div>
+                    <div class="p-8 bg-yellow-500 rounded-lg">
+                        <h1 class="text-4xl">Widthdraw</h1>
+                        <h4 class="text-3xl">$ <span id="widthdraw-total">00</span></h4>
+                    </div>
+                    <div class="p-8 bg-violet-500 rounded-lg">
+                        <h1 class="text-4xl">Balance</h1>
+                        <h4 class="text-3xl">$ <span id="balance-total">1240</span> </h4>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="mt-8 w-9/12 mx-auto">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-blue-400 rounded-lg p-10">
+                        <h1 class="text-3xl text-white mb-2">Deposite</h1>
+                        <input class="p-3 rounded-lg w-full" type="text" name="" id="deposite-input"
+                            placeholder="Enter the deposite figure">
+                        <button class="px-6 py-2 text-white rounded-lg bg-emerald-700 block mt-2 hover:bg-coral"
+                            id="btn-deposite">Deposite</button>
+
+                    </div>
+                    <div class="bg-red-400 rounded-lg p-10">
+                        <h1 class="text-3xl text-white mb-2">Widthdraw</h1>
+                        <input class="p-3 rounded-lg w-full" type="text" name="" id="widthfraw-input"
+                            placeholder="Enter the widthdraw figure">
+                        <button class="px-6 py-2 text-white rounded-lg bg-emerald-700 block mt-2 hover:bg-coral"
+                            id="btn-widthdraw">Widthdraw</button>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <script src="deposite.js"></script>
+    </body>
+
+</html>
